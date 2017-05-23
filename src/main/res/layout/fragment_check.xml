@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colormain">
+
+    <LinearLayout
+        android:id="@+id/l_top"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/colortop">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/select"
+            android:textSize="20dp"
+            android:textColor="@color/textcolor"
+            android:layout_gravity="center"
+            android:layout_marginLeft="15dp"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colormain"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        >
+        <Spinner
+            android:id="@+id/spinner"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:entries="@array/spinner"
+            android:scrollbars="none"
+
+            >
+        </Spinner>
+        <LinearLayout
+            android:id="@+id/l_number"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp">
+            <EditText
+                android:id="@+id/e_danhao"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:hint="@string/input"
+                android:textSize="15dp"
+                android:inputType="number"
+                android:maxLength="20"
+                android:minWidth="10dp"
+                android:textColor="@color/textcolor"/>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_query"
+            android:layout_width="230dp"
+            android:layout_height="wrap_content"
+            android:text="@string/query"
+            android:textColor="@android:color/white"
+            android:layout_marginTop="35dp"
+            android:background="@drawable/button_shape"
+            />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,75 @@
+<resources>
+    <string name="app_name">快递查询</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+    <!--checkActivity 主界面-->
+    <string name="select">快递查询</string>
+    <string name="record">历史纪录</string>
+    <string name="guide">快递大全</string>
+    <string name="about">关于</string>
+
+    <!--查询界面-->
+    <string name="input">请输入快递单号</string>
+    <string name="query">查   询</string>
+    <string name="input_bianhao">请输入编号</string>
+
+
+    <!--物流信息-->
+    <string name="logisticsQuery">物流查询</string>
+    <string name="company">承运公司：</string>
+    <string name="danHao">运单编号：</string>
+    <string name="logisticsTracking">物流跟踪</string>
+
+
+    <!--关于开发者-->
+    <string name="more">更多</string>
+    <string name="developers">开发者   easlon</string>
+    <string name="email">联系方式  easlon@gmail.com</string>
+    <string name="version">版本 1.0</string>
+
+
+    <!--快递大全listview item-->
+    <string name="companyName">AAE全球专递</string>
+    <string name="phone">400-6100-400</string>
+
+
+    <!--历史纪录 item-->
+    <string name="name">中通快递</string>
+    <string name="record_danhao">403666568295</string>
+    <string name="time">2016-05-29 05:31</string>
+    <string name="systemTime">yyyy-MM-dd HH:mm:ss</string>
+
+    <!--删除对话框-->
+    <string name="hint">提示</string>
+    <string name="delete">确定要删除吗？</string>
+    <string name="ture">确定</string>
+    <string name="flase">取消</string>
+
+    <!--协议-->
+    <string name="traceplace">到达：湖北武汉洪山区白沙洲公司 指定：工商(18986290165) 派送</string>
+    <string name="tracetime">2016-10-15 09:38:01</string>
+
+    <string name="xieyiname">快递查询软件许可协议</string>
+    <string name="xieyidaoyan">【首部及导言】</string>
+    <string name="welcome">欢迎您使用快递查询软件及服务！</string>
+    <string name="message">使用本软件，请您务必审慎阅读、充分理解各条款内容，特别是免除或者限制责任的内容，
+    在此提醒您注意。</string>
+     <string name="message1">除非您已经阅读并接受协议所以条款，否则您无权下载、安装、使用、等行为即视为
+     您已阅读并同意上述协议的约束。</string>
+
+
+    <!--快递的名称-->
+    <string name="aae">AAE全球专递</string>
+    <string name="bht">BHT</string>
+    <string name="dhl">DHL</string>
+    <string name="dsu">D速快递</string>
+    <string name="ems">EMS</string>
+    <string name="fedex">FedEx</string>
+    <string name="tnt"></string>
+    <string name="ups"></string>
+    <string name="yibang"></string>
+    <string name="guangdongyouzheng"></string>
+</resources>
