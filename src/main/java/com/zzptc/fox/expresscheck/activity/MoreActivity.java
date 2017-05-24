@@ -27,8 +27,6 @@ public class MoreActivity extends AppCompatActivity {
 
     @Bind(R.id.toolbar_more)
     Toolbar toolbarMore;
-    @Bind(R.id.l_login)
-    LinearLayout lLogin;
     @Bind(R.id.tv_haoping)
     TextView tvHaoping;
     @Bind(R.id.l_xieyi)
@@ -43,16 +41,11 @@ public class MoreActivity extends AppCompatActivity {
     }
 
 
-    @OnClick({R.id.toolbar_more,R.id.l_login,R.id.tv_haoping,R.id.l_xieyi})
+    @OnClick({R.id.toolbar_more,R.id.tv_haoping,R.id.l_xieyi})
     void onClick(View v) {
         switch (v.getId()) {
             case R.id.toolbar_more:
                 finish();
-                break;
-
-            case R.id.l_login:
-                Intent intent = new Intent(MoreActivity.this, LoginActivity.class);
-                startActivity(intent);
                 break;
 
             case R.id.tv_haoping:

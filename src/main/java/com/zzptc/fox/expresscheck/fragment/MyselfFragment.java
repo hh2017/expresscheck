@@ -9,9 +9,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
-import android.widget.Button;
 import android.widget.ListView;
-import android.widget.Toast;
 
 import com.zzptc.fox.expresscheck.Myhelps.DBDao;
 import com.zzptc.fox.expresscheck.R;
@@ -21,16 +19,13 @@ import com.zzptc.fox.expresscheck.beans.ExpressCheckBean;
 import java.util.List;
 
 /**
- *
  * @auther : wanderders
  * @date : 2016/9/19
  * @instructions : 显示快递查询历史记录
- *
  */
 public class MyselfFragment extends Fragment {
 
     private ListView lv_record;
-    private Button btn_shuaxin;
 
     private DBDao mDbdao;
     private RecordItemAdapter adapter;
@@ -42,17 +37,6 @@ public class MyselfFragment extends Fragment {
         View view = inflater.inflate(R.layout.fragment_myself, container, false);
 
         mDbdao = new DBDao(getContext());
-
-        btn_shuaxin = (Button) view.findViewById(R.id.btn_shuaxin);
-        btn_shuaxin.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-              /*  adapter.update(dbdao.selectAllExpre());*/
-                update();
-                Toast.makeText(getActivity(), "你点击了我", Toast.LENGTH_SHORT).show();
-            }
-        });
-
 
         lv_record = (ListView) view.findViewById(R.id.lv_record);
         mList = mDbdao.selectAllExpre();
@@ -89,11 +73,14 @@ public class MyselfFragment extends Fragment {
         return view;
     }
 
-    public void update() {
-        if(adapter != null){
-            adapter.update(mDbdao.selectAllExpre());
+
+    @Override
+    public void setUserVisibleHint(boolean isVisibleToUser) {
+        super.setUserVisibleHint(isVisibleToUser);
+        if (isVisibleToUser) {
+            if(adapter != null){
+                adapter.update(mDbdao.selectAllExpre());
+            }
         }
     }
-
-
 }

@@ -41,11 +41,5 @@ public class MyFragmentStatePagerAdapter extends FragmentStatePagerAdapter{
         return mFragments.size();
     }
 
-    @Override
-    public int getItemPosition(Object object) {
-        if(object instanceof MyselfFragment){
-            ((MyselfFragment) object).update();
-        }
-        return super.getItemPosition(object);
-    }
+
 }

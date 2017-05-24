@@ -16,7 +16,7 @@
             android:id="@+id/iv_back"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@mipmap/back" />
+            android:src="@drawable/back" />
 
         <TextView
             android:id="@+id/tv_company"
@@ -30,31 +30,6 @@
             android:textSize="18sp" />
     </android.support.v7.widget.Toolbar>
 
-    <LinearLayout
-        android:id="@+id/l_login"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:layout_marginLeft="10dp"
-            android:src="@mipmap/login" />
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="60dp"
-            android:layout_marginLeft="20dp"
-            android:gravity="center_vertical"
-            android:text="登录/注册"
-            android:textSize="20sp" />
-    </LinearLayout>
-
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="25dp"
-        android:background="@color/colormain"
-        android:gravity="center_vertical" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -64,7 +39,7 @@
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_marginLeft="10dp"
-            android:src="@mipmap/shoucang" />
+            android:src="@drawable/shoucang" />
 
         <TextView
             android:id="@+id/tv_haoping"
@@ -91,7 +66,7 @@
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_marginLeft="10dp"
-            android:src="@mipmap/shezhi" />
+            android:src="@drawable/shezhi" />
 
         <TextView
             android:layout_width="match_parent"
@@ -106,22 +81,5 @@
         android:layout_width="match_parent"
         android:layout_height="25dp"
         android:background="@color/colormain" />
-
-    <!--<LinearLayout-->
-    <!--android:layout_width="match_parent"-->
-    <!--android:layout_height="wrap_content">-->
-    <!--<ImageView-->
-    <!--android:layout_width="wrap_content"-->
-    <!--android:layout_height="match_parent"-->
-    <!--android:src="@mipmap/fenxiang"-->
-    <!--android:layout_marginLeft="10dp"/>-->
-    <!--<TextView-->
-    <!--android:layout_width="match_parent"-->
-    <!--android:layout_height="60dp"-->
-    <!--android:text="好友分享"-->
-    <!--android:textSize="20sp"-->
-    <!--android:layout_marginLeft="20dp"-->
-    <!--android:gravity="center_vertical"/>-->
-    <!--</LinearLayout>-->
 
 </LinearLayout>

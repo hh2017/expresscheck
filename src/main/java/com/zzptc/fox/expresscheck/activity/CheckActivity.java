@@ -6,7 +6,6 @@ import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentActivity;
 import android.support.v4.view.ViewPager;
 import android.widget.RadioGroup;
-import android.widget.Toast;
 
 import com.zzptc.fox.expresscheck.R;
 import com.zzptc.fox.expresscheck.adapter.MyFragmentStatePagerAdapter;
@@ -73,8 +72,6 @@ public class CheckActivity extends FragmentActivity {
                         break;
                     case R.id.r_myself:
                         position = 1;
-                        mMyselfFragment.update();
-                        Toast.makeText(CheckActivity.this,"嘿嘿",Toast.LENGTH_SHORT).show();
                         break;
                     case R.id.r_guide:
                         position = 2;
@@ -100,7 +97,6 @@ public class CheckActivity extends FragmentActivity {
                         break;
                     case 1:
                         rg_btn.check(R.id.r_myself);
-                        Toast.makeText(CheckActivity.this,"嘿嘿",Toast.LENGTH_SHORT).show();
                         break;
                     case 2:
                         rg_btn.check(R.id.r_guide);
